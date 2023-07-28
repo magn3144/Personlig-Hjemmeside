@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <script src="popup.js"></script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style_projects.css">
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navigation-bar">
+                <h1 class="name-displayer">Magnus E. Bennett</h1>
+                <div class="link-container">
+                    <a id="home" href="home.html">Home</a>
+                    <a href="#"><u>Projects</u></a>
+                    <a href="#">Courses / Grades</a>
+                    <a id="resume" href="#">Resume</a>
+                </div>
+            </nav>
+            <h1 class="welcome-displayer">I have made machine learning, game development and various other programming projects</h1>
+            <div class="background-container">
+                <img class="cover-displayer" src="images/low poly planet.png" alt="Cover">
+            </div>
+        </header>
+
+        <section id="projects-introduction">
+            <p>
+                <span class="bold">Welcome to the project catalogue</span> <br>
+                Here you can get an insight into the relevant programming projects i have made in the last five years.
+            </p>
+        </section>
+
+        <section>
+            <hr>
+            <div class="project-category-header">
+                Games
+            </div>
+
+            <div class="grid-container">
+                <div class="grid-item" id="cave-cart">
+                    <img class="trigger-image" src="images/low poly planet.png" alt="Cover">
+                    <div><h2>Cave Cart</h2></div>
+                </div>
+                <div class="grid-item" id="portefolio">
+                    <img src="images/low poly planet.png" alt="Cover">
+                    <div><h2>This Portefolio</h2></div>
+                </div>
+                <div class="grid-item" id="hypercube">
+                    <img src="images/low poly planet.png" alt="Cover">
+                    <div><h2>hypercube Simulation</h2></div>
+                </div>
+                <div class="grid-item" id="dream-game">
+                    <img src="images/low poly planet.png" alt="Cover">
+                    <div><h2>Dream Game</h2></div>
+                </div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
+                <div class="grid-item">9</div>
+                <div class="grid-item">10</div>
+                <div class="grid-item">11</div>
+                <div class="grid-item">12</div>
+            </div>
+
+            <div class="popup-overlay" id="popup-overlay-closed">
+                <div class="popup-content" id="popup-content-closed">
+                    <div id="popup-image-div">
+                        <img src="images/low poly planet.png" alt="Popup Image" class="popup-image">
+                        <h2 class="centered-on-image">Cave Cart</h2>
+                    </div>
+                    <p id="popup-text">
+                        <span class="date-text">01/08/2019 - 01/09/2019</span><br><br>
+                        In 2019 i attended a Danish folk high school, where i took the game design course. With my group i made several games. Cave Cart was the final project, which took a month to make. My main responsibility on the project was programming using Unity and C#. The game is similar to temple run. The player is driving a mine-cart in a tunnel with three tracks. To avoid obstacles like holes and explosive barrels the player switches tracks. the player gets points according to how long they survive and gets extra points by collecting pickups. The maze is procedurally generated, and the game is endless. The game also contains power-ups, a start screen, setting and credit scene.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <footer>
+            <img src="images/github icon.png">
+            <img src="images/Mail-Icon-White-on-Black.png">
+            <img src="images/linkedin icon.png">
+        </footer>
+    </body>
+</html>

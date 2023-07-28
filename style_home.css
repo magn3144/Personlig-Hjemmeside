@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Flex Mono Light', 'IBM Flex Mono Regular', 'Arial', 'Helvetica', 'sans-serif';
+    text-transform: uppercase;
+}
+
+/* Import the IBM Flex Mono font */
+@font-face {
+    font-family: 'IBM Flex Mono Regular';
+    src: url('IBM_Plex_Mono_WOFF/IBMPlexMono-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'IBM Flex Mono Light';
+    src: url('IBM_Plex_Mono_WOFF/IBMPlexMono-Light.woff') format('woff');
+}
+
+header {
+    position: relative;
+}
+.navigation-bar {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    right: 0;
+    margin: 3% 5%;
+}
+.name-displayer {
+    color: white;
+    font-family: 'IBM Flex Mono Regular';
+}
+.welcome-displayer {
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 15%;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+
+}
+.highlight {
+    background-color: black;
+}
+.link-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+#resume {
+    font-family: 'IBM Flex Mono Regular';
+}
+.link-container a {
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+.cover-displayer {
+    /* display: block; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.background-container {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+#description-box {
+    background-color:rgb(208, 216, 255);
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#about-me-header {
+    color: #001AA4;
+    font-family: 'IBM Flex Mono Regular';
+    font-size: 28px;
+    margin-bottom: 5%;
+}
+#about-me-description {
+    font-size: 28px;
+}
+#left-box {
+    padding-right:2%;
+    flex: 10;
+}
+.vertical-line {
+    width: 1px;
+    height: 200px;
+    background-color: black;
+}
+#right-box {
+    flex: 30;
+    padding-left: 4%;
+
+}
+#personal-description {
+    font-size: 25px;
+    font-family: 'IBM Flex Mono Regular';
+}
+
+#timeline-section {
+    background-color:rgb(255, 255, 255);
+    height: 800px;
+    position: relative;
+    display: flex;
+}
+#timeline-section img {
+    height: 100%;
+    object-fit: contain;
+}
+#timeline-box {
+    height: 100%;
+    flex-grow: 1;
+    padding: 4%;
+    display: flex;
+}
+#timeline {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 13.1%;
+}
+#timeline div {
+    margin: auto;
+}
+#timeline-line1 {
+    width: 2px;
+    height: 77px;
+    background-color: black;
+}
+#timeline-line2 {
+    width: 2px;
+    height: 210px;
+    background-color: black;
+}
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: transparent;
+}
+#timeline-text h2 {
+    text-align: center;
+    padding: 4%;
+    font-size: 30px;
+}
+#timeline-text p {
+    font-size: 25px;
+}
+.regular {
+    font-family: 'IBM Flex Mono Regular';
+}
+
+footer {
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-left: 40%;
+    padding-right: 40%;
+    height: 60px;
+}
+.horizontal-line {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
