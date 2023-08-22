@@ -130,6 +130,7 @@ hr {
     overflow: hidden;
     transition: box-shadow 0.2s ease-in-out, z-index 0s;
     z-index: 0;
+    position: relative;
 }
 .grid-item:hover {
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
@@ -140,18 +141,56 @@ hr {
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: height 0.3s;
+    transition: transform 0.3s;
+    /* transform: translate(0px, -10%); */
 }
-.grid-item img:hover {
-    height: 80%;
+.grid-item:hover img {
+    transform: translate(0px, -50%);
 }
 .grid-item div {
     width: 100%;
-    height: 20%;
+    height: 50%;
+    position: relative;
     background-color: white;
+    transition: transform 0.3s;
+    /* transform: translate(0px, -20%); */
+}
+.grid-item:hover div {
+    transform: translate(0px, -100%);
+}
+.grid-item div h2 {
+    width: 100%;
+    height: 20%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+}
+.grid-item div span {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid-item div p {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid-item:hover {
+    cursor: pointer;
+}
+.grid-item-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -400%);
+    font-size: 30px;
+    color: #fff;
+    /* font-family: "IBM Flex Mono Bold"; */
+    background-color: black;
 }
 
 .popup-overlay {
@@ -184,23 +223,30 @@ hr {
 }
 #popup-content-closed {
     opacity: 0;
-    width: 70%;
-    height: 70%;
+    width: 60%;
+    height: 60%;
 }
-#popup-content-open div {
+/* #popup-content-open div {
     height: 40%;
     opacity: 100;
 }
 #popup-content-closed div {
     height: 100%;
     opacity: 0;
-}
-#popup-image-div {
-    width: 100%;
-    height: 40%;
+} */
+#popup-image-div-closed {
+    height: 100%;
+    opacity: 0;
     overflow: hidden;
     position: relative;
-    transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out, opacity 0.2s ease-in-out;
+}
+#popup-image-div-open {
+    height: 40%;
+    opacity: 100;
+    overflow: hidden;
+    position: relative;
+    transition: height 0.3s ease-in-out, opacity 0.2s ease-in-out;
 }
 .popup-image {
     object-fit: cover;
