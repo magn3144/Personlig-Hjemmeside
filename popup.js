@@ -82,6 +82,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			setTimeout(function () {
 				popupOverlay.style.visibility = 'hidden';
 			}, 400);
+
+			const imageDiv = document.getElementById('popup-image-div-open');
+			imageDiv.id = 'popup-image-div-closed';
 		}
 	}
 
