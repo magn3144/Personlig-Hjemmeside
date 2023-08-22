@@ -124,43 +124,42 @@ header {
     height: 100%;
     object-fit: contain;
 }
-#timeline-box {
+.timeline-line {
+    width: 2px;
     height: 100%;
-    flex-grow: 1;
-    padding: 4%;
-    display: flex;
-}
-#timeline {
-    padding-left: 4%;
-    padding-right: 4%;
-    padding-top: 13.1%;
-}
-#timeline div {
-    margin: auto;
-}
-#timeline-line1 {
-    width: 2px;
-    height: 77px;
     background-color: black;
-}
-#timeline-line2 {
-    width: 2px;
-    height: 210px;
-    background-color: black;
+    padding: 0px;
 }
 .circle {
-    width: 20px;
-    height: 20px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     border: 2px solid black;
     background-color: transparent;
+    padding: 0px;
 }
-#timeline-text h2 {
+#timeline-container h2 {
     text-align: center;
-    padding: 4%;
+    padding-top: 4%;
     font-size: 30px;
 }
-#timeline-text p {
+.timeline-grid {
+    width: 90%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: 1fr 99fr;
+    grid-template-rows: 1fr 4fr 1fr 6fr 1fr;
+    gap: 0px;
+    margin: 5%;
+    grid-gap: 0px 10px;
+}
+.timeline-grid div {
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timeline-grid p {
     font-size: 25px;
 }
 .regular {
