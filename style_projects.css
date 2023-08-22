@@ -136,18 +136,7 @@ hr {
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
-.grid-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.3s;
-    /* transform: translate(0px, -10%); */
-}
-.grid-item:hover img {
-    transform: translate(0px, -50%);
-}
-.grid-item div {
+.grid-text-container {
     width: 100%;
     height: 50%;
     position: relative;
@@ -155,32 +144,43 @@ hr {
     transition: transform 0.3s;
     /* transform: translate(0px, -20%); */
 }
-.grid-item:hover div {
+.grid-item:hover .grid-text-container {
     transform: translate(0px, -100%);
 }
-.grid-item div h2 {
+.grid-text-container h2 {
     width: 100%;
-    height: 20%;
+    height: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.grid-item div span {
+.grid-text-container span {
     width: 100%;
     height: 20%;
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: center;
 }
-.grid-item div p {
+.grid-text-container p {
     width: 100%;
-    height: 60%;
+    height: 50%;
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: center;
+    text-align: center;
 }
 .grid-item:hover {
     cursor: pointer;
+}
+.grid-image-container {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
+}
+.grid-item:hover .grid-image-container {
+    transform: translate(0px, -50%);
 }
 .grid-item-title {
     position: absolute;
@@ -191,6 +191,13 @@ hr {
     color: #fff;
     /* font-family: "IBM Flex Mono Bold"; */
     background-color: black;
+    z-index: 2;
+}
+.grid-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .popup-overlay {
