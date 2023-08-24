@@ -46,7 +46,7 @@ document.addEventListener('HTMLDictsReady', function() {
 
         const projectText = document.createElement('p');
         let text = text_dict[name];
-        projectText.textContent = truncateText(text, 220);
+        projectText.textContent = truncateText(text, 200);
 
         projectImageContainer.appendChild(projectItemTitle);
         projectImageContainer.appendChild(projectImage);
