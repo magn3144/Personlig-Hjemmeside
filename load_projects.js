@@ -2,6 +2,7 @@ let html_dict = {};
 let category_dict = {};
 let date_dict = {};
 let text_dict = {};
+let image_dict = {};
 
 // Get the html code into a dictionary
 fetch('./popup_html.txt')
@@ -9,18 +10,15 @@ fetch('./popup_html.txt')
     .then(data => {
         projectList = data.split('\r\n\r\n');
         for (let i = 0; i < projectList.length; i++) {
-            let lines = projectList[i].split('\r\n');
-            let name = lines[0];
-            let category = lines[1];
-            let html = lines.slice(2).join('\r\n');
-            // console.log(name);
-            // console.log(category);
-            // console.log(html);
-            html_dict[name] = html;
-            category_dict[name] = category;
+            const lines = projectList[i].split('\r\n');
+            const category = lines[0];
+            const html = lines.slice(1).join('\r\n');
 
             const tempElement = document.createElement('div');
             tempElement.innerHTML = html;
+
+            const name = tempElement.querySelector('.centered-on-image').textContent;
+            // console.log('Name:', name);
 
             const dateSpan = tempElement.querySelector('.date-text');
             const date = dateSpan.textContent;
@@ -28,13 +26,20 @@ fetch('./popup_html.txt')
             const textParagraph = tempElement.querySelector('#popup-text');
             const text = textParagraph.textContent.split(date)[1].trim();
 
+            const image = tempElement.querySelector('.popup-image');
+            const imageSrc = image.src;
+
+            html_dict[name] = html;
+            category_dict[name] = category;
             date_dict[name] = date;
             text_dict[name] = text;
+            image_dict[name] = imageSrc;
 
-            console.log('Date:', date);
-            console.log('Text:', text);
+            // console.log('Date:', date);
+            // console.log('Text:', text);
+            // console.log('Image:', imageSrc);
         }
-        console.log(projectList);
+        // console.log(projectList);
 
         let nextScript = new Event('HTMLDictsReady');
         document.dispatchEvent(nextScript);

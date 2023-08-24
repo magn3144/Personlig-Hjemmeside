@@ -1,7 +1,7 @@
 document.addEventListener('HTMLDictsReady', function() {
     const courseGrids = document.getElementsByClassName('projects-grid-container');
     // console.log(Object.keys(html_dict).length);
-    // console.log(courseGrid);
+    // console.log(courseGrids);
     const names = Object.keys(html_dict);
 
     for (const name of names) {
@@ -12,6 +12,7 @@ document.addEventListener('HTMLDictsReady', function() {
                 break;
             }
         }
+        // console.log(courseGrid);
 
         const projectItem = document.createElement('div');
         projectItem.classList.add('project-item');
@@ -25,7 +26,7 @@ document.addEventListener('HTMLDictsReady', function() {
         projectItemTitle.textContent = name;
 
         const projectImage = document.createElement('img');
-        projectImage.src = `./images/${name}.png`;
+        projectImage.src = image_dict[name];
         projectImage.alt = name;
 
         const projectTextContainer = document.createElement('div');
