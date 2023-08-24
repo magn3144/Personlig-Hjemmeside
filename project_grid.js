@@ -1,3 +1,8 @@
+function truncateText(text, maxLength) {
+    if (text.length <= maxLength) return text;
+    return text.slice(0, maxLength) + "...";
+}
+
 document.addEventListener('HTMLDictsReady', function() {
     const courseGrids = document.getElementsByClassName('projects-grid-container');
     // console.log(Object.keys(html_dict).length);
@@ -40,7 +45,8 @@ document.addEventListener('HTMLDictsReady', function() {
         dateText.textContent = date_dict[name];
 
         const projectText = document.createElement('p');
-        projectText.textContent = text_dict[name];
+        let text = text_dict[name];
+        projectText.textContent = truncateText(text, 220);
 
         projectImageContainer.appendChild(projectItemTitle);
         projectImageContainer.appendChild(projectImage);
