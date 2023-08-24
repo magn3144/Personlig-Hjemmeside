@@ -1,6 +1,7 @@
 cave-cart
+game
 <div id="popup-image-div-closed">
-    <img src="images/low poly planet.png" alt="Popup Image" class="popup-image">
+    <img src="images/cave-cart.png" alt="Popup Image" class="popup-image">
     <h2 class="centered-on-image">Cave Cart</h2>
 </div>
 <p id="popup-text">
@@ -9,6 +10,7 @@ cave-cart
 </p>
 
 portefolio
+game
 <div id="popup-image-div-closed">
     <img src="images/Cover.jpg" alt="Popup Image" class="popup-image">
     <h2 class="centered-on-image">Cave Cart</h2>

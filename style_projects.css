@@ -25,14 +25,14 @@
     padding: 20px;
 }
 
-.grid-container {
+.projects-grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 1fr;
     grid-gap: 0px;
     padding: 0px;
 }
-.grid-item {
+.project-item {
     background-color: rgb(204, 204, 204);
     aspect-ratio: 1/1;
     overflow: hidden;
@@ -40,12 +40,12 @@
     z-index: 0;
     position: relative;
 }
-.grid-item:hover {
+.project-item:hover {
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
     z-index: 1;
     cursor: pointer;
 }
-.grid-text-container {
+.project-text-container {
     width: 100%;
     height: 50%;
     position: relative;
@@ -53,24 +53,24 @@
     transition: transform 0.3s;
     /* transform: translate(0px, -20%); */
 }
-.grid-item:hover .grid-text-container {
+.project-item:hover .project-text-container {
     transform: translate(0px, -80%);
 }
-.grid-text-container h2 {
+.project-text-container h2 {
     width: 100%;
     height: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.grid-text-container span {
+.project-text-container span {
     width: 100%;
     height: 20%;
     display: flex;
     align-items: top;
     justify-content: center;
 }
-.grid-text-container p {
+.project-text-container p {
     width: 100%;
     height: 50%;
     display: flex;
@@ -78,17 +78,17 @@
     justify-content: center;
     text-align: center;
 }
-.grid-image-container {
+.project-image-container {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
     transition: transform 0.3s;
 }
-.grid-item:hover .grid-image-container {
+.project-item:hover .project-image-container {
     transform: translate(0px, -30%);
 }
-.grid-item-title {
+.project-item-title {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -99,7 +99,7 @@
     background-color: black;
     z-index: 2;
 }
-.grid-image-container img {
+.project-image-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
