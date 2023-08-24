@@ -13,7 +13,7 @@ fetch('DTU_Grades.csv')
 
         // Loop through each CSV row and add to the HTML structure
         csvRows.forEach(row => {
-            const [name, grade, ects, semester] = row.split(';');
+            const [name, grade, ects, semester, course_id] = row.split(';');
 
             const courseRow = document.createElement('div');
             courseRow.classList.add('course-row', 'hover-shadow');
@@ -38,6 +38,10 @@ fetch('DTU_Grades.csv')
             courseRow.appendChild(gradeElement);
             courseRow.appendChild(ectsElement);
             courseRow.appendChild(semesterElement);
+
+            courseRow.addEventListener('click', () => {
+                window.open(`https://kurser.dtu.dk/course/${course_id}`);
+            });
 
             courseGrid.appendChild(courseRow);
         });
