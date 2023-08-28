@@ -22,7 +22,7 @@ unity
 
 web-development
 <div id="popup-image-div-closed">
-    <img src="images/CaveCart.png" alt="Popup Image" class="popup-image">
+    <img src="images/Background_Image_HOME_edited.jpg" alt="Popup Image" class="popup-image">
     <h2 class="centered-on-image">This Website</h2>
 </div>
 <p id="popup-text">

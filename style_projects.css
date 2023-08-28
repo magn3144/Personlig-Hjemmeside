@@ -119,6 +119,7 @@
     align-items: center;
     display: flex;
     transition: background-color 0.4s ease-in-out;
+    z-index: 1;
 }
 #popup-overlay-closed {
     background-color: rgba(0, 0, 0, 0);
@@ -177,10 +178,10 @@
 }
 .popup-content p {
     margin: 5%;
-    font-size: 30px;
+    font-size: 20px;
 }
 .date-text {
-    font-size: 18px;
+    font-size: 15px;
 }
 .popup-icon {
     margin: 15px 0px 15px 0px;
