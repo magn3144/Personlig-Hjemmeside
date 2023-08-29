@@ -6,7 +6,7 @@ let image_dict = {};
 
 document.addEventListener('DOMContentLoaded', function() {
     // Get the html code into a dictionary
-    fetch('./popup_html.txt')
+    fetch('./popup_html.html')
         .then(response => response.text())
         .then(data => {
             projectList = data.split('\r\n\r\n');
