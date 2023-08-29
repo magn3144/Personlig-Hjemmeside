@@ -9,12 +9,15 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch('./popup_html.html')
         .then(response => response.text())
         .then(data => {
+            console.log('HTML loaded');
             projectList = data.split('\r\n\r\n');
             for (let i = 0; i < projectList.length; i++) {
+                console.log("1");
                 const lines = projectList[i].split('\r\n');
                 const category = lines[0];
                 const html = lines.slice(1).join('\r\n');
 
+                console.log("2");
                 const tempElement = document.createElement('div');
                 tempElement.innerHTML = html;
 
@@ -29,12 +32,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 const image = tempElement.querySelector('.popup-image');
                 const imageSrc = image.src;
+                console.log("3");
 
                 html_dict[name] = html;
                 category_dict[name] = category;
                 date_dict[name] = date;
                 text_dict[name] = text;
                 image_dict[name] = imageSrc;
+                console.log("4");
 
                 // console.log('Date:', date);
                 // console.log('Text:', text);
@@ -44,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             let nextScript = new Event('HTMLDictsReady');
             document.dispatchEvent(nextScript);
+            console.log('HTML dicts ready');
         })
         .catch(error => {
             console.log('Error:', error);
