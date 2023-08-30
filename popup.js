@@ -8,7 +8,7 @@ document.addEventListener('projectGridReady', function () {
 	
 	// Add event listeners to all buttons, to open and change html of the popup when clicked
 	for (let i = 0; i < projectItems.length; i++) {
-		projectItems[i].addEventListener('click', function () {
+		projectItems[i].addEventListener('click', function (event) {
 			// Make sure popup doesnt close instantly when opened
 			event.stopPropagation();
 
@@ -31,8 +31,18 @@ document.addEventListener('projectGridReady', function () {
 			popupOverlay.id = 'popup-overlay-open';
 
 			// Change the html of the popup
-			let name = projectItems[i].id;
-			popupContent.innerHTML = html_dict[name];
+			const name = projectItems[i].id;
+			const HTML = `
+			<div id="popup-image-div-closed">
+				<img src="${imageDict[name]}" alt="Popup Image" class="popup-image">
+			<h2 class="centered-on-image">${name}</h2>
+			</div>
+			<p id="popup-text">
+				<span class="date-text">${dateDict[name]}</span><br>
+				<a href="${projectLinkDict[name]}" target="_blank" class="icon popup-icon"><img src="${iconDict[name]}"></a>
+				${textDict[name]}
+			</p>`;
+			popupContent.innerHTML = HTML;
 			const imageDiv = document.getElementById('popup-image-div-closed');
 			waitForNextFrame(function() {
 				imageDiv.id = 'popup-image-div-open';

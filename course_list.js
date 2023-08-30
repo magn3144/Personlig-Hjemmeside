@@ -2,13 +2,8 @@
 fetch('DTU_Grades.csv')
     .then(response => response.text())
     .then(csvData => {
-        // Get the course container element
         const courseGrid = document.getElementById('course-grid');
-
-        // Split CSV data into rows
         const csvRows = csvData.split('\n');
-
-        // Remove the header row (first row)
         csvRows.shift();
 
         // Loop through each CSV row and add to the HTML structure
