@@ -16,14 +16,14 @@ document.addEventListener('HTMLDictsReady', function() {
             }
         }
 
-        console.log(name);
-        console.log(categoryDict[name]);
-        console.log(dateDict[name]);
-        console.log(textDict[name]);
-        console.log(imageDict[name]);
-        console.log(iconDict[name]);
-        console.log(projectLinkDict[name]);
-        console.log(courseGrid);
+        // console.log(name);
+        // console.log(categoryDict[name]);
+        // console.log(dateDict[name]);
+        // console.log(textDict[name]);
+        // console.log(imageDict[name]);
+        // console.log(iconDict[name]);
+        // console.log(projectLinkDict[name]);
+        // console.log(courseGrid);
 
         const projectItem = document.createElement('div');
         projectItem.classList.add('project-item');
