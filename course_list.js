@@ -17,9 +17,9 @@ fetch('DTU_Grades.csv')
             nameElement.classList.add('course-item', 'name');
             nameElement.textContent = name;
 
-            const gradeElement = document.createElement('p');
-            gradeElement.classList.add('course-item', 'grade');
-            gradeElement.textContent = grade;
+            // const gradeElement = document.createElement('p');
+            // gradeElement.classList.add('course-item', 'grade');
+            // gradeElement.textContent = grade;
 
             const ectsElement = document.createElement('p');
             ectsElement.classList.add('course-item', 'ects');
@@ -30,7 +30,7 @@ fetch('DTU_Grades.csv')
             semesterElement.textContent = semester;
             
             courseRow.appendChild(nameElement);
-            courseRow.appendChild(gradeElement);
+            // courseRow.appendChild(gradeElement);
             courseRow.appendChild(ectsElement);
             courseRow.appendChild(semesterElement);
 
