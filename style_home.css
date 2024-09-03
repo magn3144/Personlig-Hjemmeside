@@ -71,7 +71,7 @@
     height: 70%;
     display: grid;
     grid-template-columns: 1fr 99fr;
-    grid-template-rows: 1fr 4fr 1fr 6fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr 6fr 1fr 7fr 1fr 6fr;
     gap: 0px;
     margin: 5%;
     grid-gap: 0px 10px;
