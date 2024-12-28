@@ -88,3 +88,45 @@
 .regular {
     font-family: 'IBM Flex Mono Regular';
 }
+
+
+/* Responsive for mobile */
+@media only screen and (max-width: 768px) {
+    #description-box {
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #about-me-header {
+        font-size: 22px; /* Smaller header text */
+    }
+
+    #about-me-description,
+    #personal-description {
+        font-size: 20px; /* Smaller body text */
+    }
+
+    #timeline-section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #timeline-container h2 {
+        font-size: 24px;
+    }
+
+    .timeline-grid {
+        grid-template-columns: 1fr;
+        margin: 2%;
+    }
+
+    .timeline-grid p {
+        font-size: 18px;
+    }
+
+    .circle {
+        width: 25px;
+        height: 25px;
+    }
+}

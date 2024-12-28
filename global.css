@@ -115,3 +115,34 @@ footer {
     overflow: hidden;
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
 }
+
+
+/* Respontive for mobile */
+@media only screen and (max-width: 768px) {
+    .welcome-displayer {
+        font-size: 24px; /* Smaller text for mobile */
+        margin-top: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .link-container a {
+        font-size: medium;
+        gap: 20px;
+    }
+
+    .background-container {
+        height: auto;
+    }
+
+    footer {
+        flex-direction: column;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
+}
