@@ -2,46 +2,33 @@
     margin: 100px;
 }
 .course-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: white;
     padding: 10px 20px;
 }
-.course-row:hover {
+.course-row:first-child {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.course-row:is(div):hover {
+    position: relative;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
     cursor: pointer;
 }
-.hover-shadow:hover {
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
-    z-index: 1;
-}
-.course-item {
-    background-color: rgb(255, 255, 255);
-    /* aspect-ratio: 5/1; */
-    overflow: hidden;
-    z-index: 0;
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-.name {
-    justify-content: left;
-    width: 100%;
-}
-.grade {
-    justify-content: right;
-    width: 100%;
-}
-.ects {
-    justify-content: right;
-    width: 100%;
-}
-.semester {
-    justify-content: right;
-    width: 100%;
+.course-item:is(.ects, .semester) {
+    text-align: right;
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 430px) {
     #course-grid {
+        margin: 0;
+    }
+    .course-row {
+        align-items: start;
+        column-gap: 0.5rem;
+    }
+    #course-grid :is(h2, p) {
+        font-size: 0.8rem;
     }
 }
