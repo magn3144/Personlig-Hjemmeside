@@ -9,6 +9,10 @@ body {
     text-transform: uppercase;
 }
 
+menu {
+    padding: 0;
+}
+
 /* Import the IBM Flex Mono font */
 @font-face {
     font-family: 'IBM Flex Mono Light';
