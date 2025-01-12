@@ -40,3 +40,8 @@
     justify-content: right;
     width: 100%;
 }
+
+@media only screen and (max-width: 420px) {
+    #course-grid {
+    }
+}

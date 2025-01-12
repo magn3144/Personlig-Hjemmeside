@@ -13,37 +13,58 @@
     </head>
     <body>
         <header>
+            <h1 class="name-displayer">Magnus E. Bennett</h1>
             <nav class="navigation-bar">
-                <h1 class="name-displayer">Magnus E. Bennett</h1>
-                <div class="link-container">
-                    <a id="home" href="home.html">Home</a>
-                    <a href="projects.html">Projects</a>
-                    <a href="courses_grades.html"><u>Courses</u></a>
-                    <a id="resume" href="CV.pdf" target="_blank">Resume</a>
-                </div>
+                <menu class="link-container">
+                    <li>
+                        <a id="home" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="courses_grades.html"><u>Courses</u></a>
+                    </li>
+                    <li>
+                        <a id="resume" href="CV.pdf" target="_blank">Resume</a>
+                    </li>
+                </menu>
             </nav>
-            <h1 class="welcome-displayer">A complete list of the courses i have taken at dtu</h1>
-            <div class="background-container">
+            <div class="burger-menu">
+                <div class="burger-menu-line"></div>
+                <div class="burger-menu-line"></div>
+                <div class="burger-menu-line"></div>
+            </div>
+            <figure class="background-container">
+                <p class="welcome-displayer">A complete list of the courses i have taken at dtu</p>
                 <img class="cover-displayer" src="images/DTUBygning101.jpg" alt="Cover">
-            </div>
+            </figure>
         </header>
-
-        <section id="course-list">
-            <div id="course-grid">
-                <div class="course-row">
-                    <h1 class="course-item name">Course Name</h1>
-                    <!-- <h1 class="course-item grade">Grade</h1> -->
-                    <h1 class="course-item ects">ECTS</h1>
-                    <h1 class="course-item semester">Semester</h1>
+        <menu>
+            <section id="course-list">
+                <div id="course-grid">
+                    <div class="course-row">
+                        <h1 class="course-item name">Course Name</h1>
+                        <!-- <h1 class="course-item grade">Grade</h1> -->
+                        <h1 class="course-item ects">ECTS</h1>
+                        <h1 class="course-item semester">Semester</h1>
+                    </div>
                 </div>
-            </div>
-        </section>
-
-        <hr>
+            </section>
+        </menu>
         <footer>
-            <a href="https://github.com/magn3144" target="_blank" class="icon"><img src="images/github.png"></a>
-            <a href="https://play.unity.com/u/Magn3144" target="_blank" class="icon"><img src="images/unity.png"></a>
-            <a href="https://www.linkedin.com/in/magn3144/" target="_blank"><img src="images/linkedin.png" class="icon"></a>
+            <ul>
+                <li>
+                    <a href="https://github.com/magn3144" target="_blank" class="icon"><img src="images/github.png"></a>
+                </li>
+                <li>
+                    <a href="https://play.unity.com/u/Magn3144" target="_blank" class="icon"><img src="images/unity.png"></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/magn3144/" target="_blank"><img src="images/linkedin.png" class="icon"></a>
+                </li>
+            </ul>
         </footer>
+        <script src="dropdown.js"/>
     </body>
 </html>

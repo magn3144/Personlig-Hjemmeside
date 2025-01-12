@@ -4,10 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 8%;
-    padding-right: 8%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding: 8% 5%;
 }
 #about-me-header {
     color: #001AA4;
@@ -70,11 +67,10 @@
     width: 90%;
     height: 70%;
     display: grid;
-    grid-template-columns: 1fr 99fr;
+    grid-template-columns: 1fr auto;
     grid-template-rows: 1fr 4fr 1fr 6fr 1fr 7fr 1fr 6fr;
-    gap: 0px;
+    column-gap: 10px;
     margin: 5%;
-    grid-gap: 0px 10px;
 }
 .timeline-grid div {
     padding: 0%;
@@ -94,8 +90,7 @@
 @media only screen and (max-width: 768px) {
     #description-box {
         flex-direction: column;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-inline: 5%;
     }
 
     #about-me-header {
@@ -128,5 +123,27 @@
     .circle {
         width: 25px;
         height: 25px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    #description-box {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        gap: 2rem;
+    }
+    .vertical-line, .timeline-grid div {
+        display: none;
+    }
+    .timeline-grid {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        width: auto;
+        gap: 0;
+    }
+    .timeline-grid p:nth-of-type(even) {
+        margin-bottom: 2rem;
     }
 }

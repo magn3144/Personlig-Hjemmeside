@@ -16,71 +16,83 @@
     </head>
     <body>
         <header>
+            <h1 class="name-displayer">Magnus E. Bennett</h1>
             <nav class="navigation-bar">
-                <h1 class="name-displayer">Magnus E. Bennett</h1>
-                <div class="link-container">
-                    <a id="home" href="home.html">Home</a>
-                    <a href="#"><u>Projects</u></a>
-                    <a href="courses_grades.html">Courses</a>
-                    <a id="resume" href="CV.pdf" target="_blank">Resume</a>
-                </div>
+                <menu class="link-container">
+                    <li>
+                        <a id="home" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="projects.html"><u>Projects</u></a>
+                    </li>
+                    <li>
+                        <a href="courses_grades.html">Courses</a>
+                    </li>
+                    <li>
+                        <a id="resume" href="CV.pdf" target="_blank">Resume</a>
+                    </li>
+                </menu>
             </nav>
-            <h1 class="welcome-displayer">I have made machine learning, game development and various other programming projects</h1>
-            <div class="background-container">
+            <div class="burger-menu">
+                <div class="burger-menu-line"></div>
+                <div class="burger-menu-line"></div>
+                <div class="burger-menu-line"></div>
+            </div>
+            <figure class="background-container">
+                <p class="welcome-displayer">I have made machine learning, game development and various other programming projects</p>
                 <img class="cover-displayer" src="images/Hive Mind With Skybox.png" alt="Cover">
-            </div>
+            </figure>
         </header>
-
-        <section id="projects-introduction">
-            <p>
-                <span class="bold">Welcome to the project catalogue</span> <br>
-                Here you can get an insight into the relevant programming projects i have made in the last five years.
-            </p>
-        </section>
-
-        <section>
-            <hr>
-            <div class="project-category-header">
-                ML / Data
-            </div>
-            <hr>
-            <div class="projects-grid-container" id="ML / Data">
-            </div>
-
-            <hr>
-            <div class="project-category-header">
-                Unity
-            </div>
-            <hr>
-            <div class="projects-grid-container" id="unity">
-            </div>
-
-            <hr>
-            <div class="project-category-header">
-                Web Development
-            </div>
-            <hr>
-            <div class="projects-grid-container" id="web-development">
-            </div>
-
-            <div class="popup-overlay" id="popup-overlay-closed">
-                <div class="popup-content" id="popup-content-closed">
-                    <div id="popup-image-div-closed">
-                        <img src="images/cave-cart.png" alt="Popup Image" class="popup-image">
-                        <h2 class="centered-on-image">Cave Cart</h2>
+        <main>
+            <section id="projects-introduction">
+                <p>
+                    <span class="bold">Welcome to the project catalogue</span> <br>
+                    Here you can get an insight into the relevant programming projects i have made in the last five years.
+                </p>
+            </section>
+            <section>
+                <hr>
+                <h2 class="project-category-header">ML / Data</h2>
+                <hr>
+                <div class="projects-grid-container" id="ML / Data"></div>
+    
+                <hr>
+                <h2 class="project-category-header">Unity</h2>
+                <hr>
+                <div class="projects-grid-container" id="unity"></div>
+    
+                <hr>
+                <h2 class="project-category-header">Web Development</h2>
+                <hr>
+                <div class="projects-grid-container" id="web-development"></div>
+    
+                <div class="popup-overlay" id="popup-overlay-closed">
+                    <div class="popup-content" id="popup-content-closed">
+                        <div id="popup-image-div-closed">
+                            <img src="images/cave-cart.png" alt="Popup Image" class="popup-image">
+                            <h2 class="centered-on-image">Cave Cart</h2>
+                        </div>
+                        <p id="popup-text">
+                            <span class="date-text">01/08/2019 - 01/09/2019</span><br><br>
+                            In 2019 i attended a Danish folk high school, where i took the game design course. With my group i made several games. Cave Cart was the final project, which took a month to make. My main responsibility on the project was programming using Unity and C#. The game is similar to temple run. The player is driving a mine-cart in a tunnel with three tracks. To avoid obstacles like holes and explosive barrels the player switches tracks. the player gets points according to how long they survive and gets extra points by collecting pickups. The maze is procedurally generated, and the game is endless. The game also contains power-ups, a start screen, setting and credit scene.
+                        </p>
                     </div>
-                    <p id="popup-text">
-                        <span class="date-text">01/08/2019 - 01/09/2019</span><br><br>
-                        In 2019 i attended a Danish folk high school, where i took the game design course. With my group i made several games. Cave Cart was the final project, which took a month to make. My main responsibility on the project was programming using Unity and C#. The game is similar to temple run. The player is driving a mine-cart in a tunnel with three tracks. To avoid obstacles like holes and explosive barrels the player switches tracks. the player gets points according to how long they survive and gets extra points by collecting pickups. The maze is procedurally generated, and the game is endless. The game also contains power-ups, a start screen, setting and credit scene.
-                    </p>
                 </div>
-            </div>
-        </section>
-        <hr>
+            </section>
+        </main>
         <footer>
-            <a href="https://github.com/magn3144" target="_blank" class="icon"><img src="images/github.png"></a>
-            <a href="https://play.unity.com/u/Magn3144" target="_blank" class="icon"><img src="images/unity.png"></a>
-            <a href="https://www.linkedin.com/in/magn3144/" target="_blank"><img src="images/linkedin.png" class="icon"></a>
+            <ul>
+                <li>
+                    <a href="https://github.com/magn3144" target="_blank" class="icon"><img src="images/github.png"></a>
+                </li>
+                <li>
+                    <a href="https://play.unity.com/u/Magn3144" target="_blank" class="icon"><img src="images/unity.png"></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/magn3144/" target="_blank"><img src="images/linkedin.png" class="icon"></a>
+                </li>
+            </ul>
         </footer>
+        <script src="dropdown.js"/>
     </body>
 </html>
