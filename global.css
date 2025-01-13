@@ -150,10 +150,10 @@ footer ul {
 }
 
 
-/* Respontive for mobile */
+/* Responsive for tablet */
 @media only screen and (max-width: 768px) {
     .welcome-displayer {
-        font-size: 24px; /* Smaller text for mobile */
+        font-size: 24px;
         margin-top: 10%;
         padding-inline: 5%;
     }
@@ -178,6 +178,7 @@ footer ul {
     }
 }
 
+/* Responsive for smartphone */
 @media only screen and (max-width: 430px) {
     header {
         position: relative;
